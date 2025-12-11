@@ -18,7 +18,8 @@ export default function Hero() {
       data-aos="fade-up"
     >
       <Container style={{ position: "relative", zIndex: 2, py: 5 }}>
-        <h1 className="fw-bold display-3 mb-4">Virtual Tutoring That Delivers Real Results</h1>
+        <h1 className="fw-bold display-3 mb-4 text-center">Virtual Tutoring </h1>
+        <p className="fw-bold display-3 mb-4">That Delivers Real Results</p>
         <p className="lead mb-4 fs-5">
           Get personalized, world-class lessons for K-12 students, available anytime, anywhere.
         </p>

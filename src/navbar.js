@@ -28,10 +28,10 @@ export default function Navbar() {
       expand="lg"
       fixed="top"
       className={`navbar-custom shadow-sm ${navbarBg ? "navbar-bg" : ""}`}
-      data-aos="fade-down"
+      style={{ zIndex: 1200, position: 'fixed', top: 0, left: 0, right: 0, width: '100%' }}
     >
       <Container>
-          <BSNav.Brand as={Link} to="/">
+          <BSNav.Brand as={Link} to="/#hero">
             <span style={{ fontWeight: "bold", color: "#4e73df", fontSize: "20px" }}>
               Virtual Tutor
             </span>
@@ -39,7 +39,7 @@ export default function Navbar() {
         <BSNav.Toggle aria-controls="main-nav" />
         <BSNav.Collapse id="main-nav">
           <Nav className="ms-auto gap-3 align-items-center">
-            <Nav.Link as={Link} to="/" active={location.pathname === "/"}>Home</Nav.Link>
+            <Nav.Link as={Link} to="/#hero" active={location.pathname === "/"}>Home</Nav.Link>
             {(() => {
               const isHome = location.pathname === "/";
               const aboutTarget = isHome ? "/#about" : "/about";
@@ -50,8 +50,7 @@ export default function Navbar() {
                 </Nav.Link>
               );
             })()}
-            <Nav.Link as={Link} to="/#services">Services</Nav.Link>
-            <Nav.Link as={Link} to="/#testimonials">Testimonials</Nav.Link>
+            <Nav.Link as={Link} to="/#testimonials" >Testimonials</Nav.Link>
             <Nav.Link as={Link} to="/#contact">Contact</Nav.Link>
             <Nav.Link
               as={Link}

@@ -1,8 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    // determine hero height to decide when footer should appear
+    const getHeroBottom = () => {
+      const hero = document.querySelector('.hero') || document.querySelector('.about-hero');
+      if (hero) {
+        const rect = hero.getBoundingClientRect();
+        // hero's bottom relative to document top
+        return rect.top + rect.height;
+      }
+      return window.innerHeight * 0.8; // fallback
+    };
+
+    const heroBottom = getHeroBottom();
+
+    const onScroll = () => {
+      const scrollY = window.scrollY || window.pageYOffset;
+      const windowBottom = scrollY + window.innerHeight;
+
+      // show footer if user has scrolled past the hero, or is near bottom of page
+      if (scrollY > heroBottom - 100 || windowBottom >= document.body.scrollHeight - 200) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    };
+
+    // check immediately on mount
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, []);
+
+  if (!visible) return null; // don't render footer until visible
 
   return (
     <footer className="bg-dark text-white py-5 mt-5">
@@ -19,8 +58,7 @@ export default function Footer() {
             <ul className="list-unstyled">
               <li><a href="#home" className="text-white text-decoration-none">Home</a></li>
               <li><a href="/about" className="text-white text-decoration-none">About</a></li>
-              <li><a href="#services" className="text-white text-decoration-none">Services</a></li>
-              <li><a href="#testimonials" className="text-white text-decoration-none">Testimonials</a></li>
+                           <li><a href="#testimonials" className="text-white text-decoration-none">Testimonials</a></li>
               <li><a href="#contact" className="text-white text-decoration-none">Contact</a></li>
             </ul>
           </Col>

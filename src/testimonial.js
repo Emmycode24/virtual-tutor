@@ -40,12 +40,12 @@ return (
 {testimonials.map((t, idx) => (
 <Col md={4} key={idx} data-aos="fade-up" data-aos-delay={idx * 200}>
 <div className="testimonial-box p-4 shadow-sm h-100" style={{ borderLeft: "4px solid #4e73df", borderRadius: "8px", backgroundColor: "#fff" }}>
-<p className="mb-4" style={{ fontStyle: "italic", color: "#555" }}>"{t.text}"</p>
+<p className="mb-4 fs-4" style={{ fontStyle: "italic", color: "black" }}>"{t.text}"</p>
 <div className="d-flex align-items-center gap-2">
-	<div style={{ fontSize: "24px" }}>{t.emoji}</div>
+	<div style={{ fontSize: "25px" }}>{t.emoji}</div>
 	<div>
 		<h6 className="fw-bold mb-0">{t.name}</h6>
-		<small className="text-muted">{t.role}</small>
+		<small className="text-muted fw-bold">{t.role}</small>
 	</div>
 </div>
 </div>
