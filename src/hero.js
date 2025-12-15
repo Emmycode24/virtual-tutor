@@ -1,6 +1,7 @@
 // components/Hero.js
 import React from "react";
 import { Container, Button, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -24,7 +25,7 @@ export default function Hero() {
           Get personalized, world-class lessons for K-12 students, available anytime, anywhere.
         </p>
         <div className="d-flex gap-3 justify-content-center flex-wrap">
-          <Button href="/signup" variant="light" size="lg" className="px-5">
+          <Button as={Link} to="/signup" variant="light" size="lg" className="px-5">
             Start Now
           </Button>
           <Button href="#about" variant="outline-light" size="lg" className="px-5">
