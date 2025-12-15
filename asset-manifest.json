@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/virtual-tutor/static/css/main.977f3209.css",
-    "main.js": "/virtual-tutor/static/js/main.905452f3.js",
+    "main.css": "/virtual-tutor/static/css/main.8c18560e.css",
+    "main.js": "/virtual-tutor/static/js/main.f31401bb.js",
     "static/js/453.50d6d62b.chunk.js": "/virtual-tutor/static/js/453.50d6d62b.chunk.js",
     "index.html": "/virtual-tutor/index.html",
-    "main.977f3209.css.map": "/virtual-tutor/static/css/main.977f3209.css.map",
-    "main.905452f3.js.map": "/virtual-tutor/static/js/main.905452f3.js.map",
+    "main.8c18560e.css.map": "/virtual-tutor/static/css/main.8c18560e.css.map",
+    "main.f31401bb.js.map": "/virtual-tutor/static/js/main.f31401bb.js.map",
     "453.50d6d62b.chunk.js.map": "/virtual-tutor/static/js/453.50d6d62b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.977f3209.css",
-    "static/js/main.905452f3.js"
+    "static/css/main.8c18560e.css",
+    "static/js/main.f31401bb.js"
   ]
 }
