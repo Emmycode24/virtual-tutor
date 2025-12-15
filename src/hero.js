@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <section
-      id="home"
+      id="hero"
       className="hero responsive-hero d-flex align-items-center text-center text-white"
       style={{
         background: "linear-gradient(135deg, #4e73df 0%, #224abe 100%)",
