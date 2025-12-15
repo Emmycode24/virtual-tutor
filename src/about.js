@@ -45,13 +45,16 @@ export default function About() {
 						<Col md={6} data-aos="fade-right">
 							<h2 className="fw-bold mb-4">Our Story</h2>
 							<p className="mb-3 fs-4">
-								Founded with a vision to revolutionize online education, Giant Stride School brings together experienced educators, modern technology, and a passion for student success.
+								Giant Strides Online School was born from a simple but powerful belief: every child deserves access to quality education and the right support to thrive no matter their location or learning level.
 							</p>
-							<p className="mb-3  fs-4">
-								With a team of over 80 dedicated tutors across different subjects and year groups, we provide structured, curriculum-aligned teaching to students preparing for national and international examinations, including UK 11+ Grammar School Entrance Exams, SATs, and Primary/Secondary curriculum support.
-							</p>
+							<p className="mb-3  fs-3">
+
+							</p>As part of Giant Strides Edu-Tech Consulting Limited, we started by supporting families who needed trusted tutors, flexible learning options, and results they could see. Over time, we grew into an online school that combines experienced educators, modern teaching tools, and personalized learning to help children take confident steps forward in their academic journey.
 							<p className="mb-3 fs-4">
-								Our mission is simple: to help every student unlock their academic brilliance and build confidence in their abilities.
+
+								From early years to secondary education and exam preparation, we focus on progress, confidence, and long-term success, not just grades. Our tutors don’t just teach — they guide, encourage, and help learners unlock their full potential.
+								At Giant Strides, learning is not rushed.
+								It is intentional, supportive, and impactful.
 							</p>
 						</Col>
 						<Col md={6} data-aos="fade-left">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Navbar as BSNav, Nav, Container } from "react-bootstrap";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -8,6 +8,7 @@ export default function Navbar() {
   const [navbarBg, setNavbarBg] = useState(false);
   const [expanded, setExpanded] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -44,17 +45,50 @@ export default function Navbar() {
         </BSNav.Toggle>
         <BSNav.Collapse id="main-nav">
           <Nav className="ms-auto gap-3 align-items-center">
-            <Nav.Link href="#hero" onClick={() => setExpanded(false)}>Home</Nav.Link>
-            {(() => {
-              const isHome = location.pathname === "/";
-              return (
-                <Nav.Link href={isHome ? "#about" : "/about"} onClick={() => setExpanded(false)}>
-                  About
-                </Nav.Link>
-              );
-            })()}
-            <Nav.Link href="#testimonials" onClick={() => setExpanded(false)}>Testimonials</Nav.Link>
-            <Nav.Link href="#contact" onClick={() => setExpanded(false)}>Contact</Nav.Link>
+            <Nav.Link
+              onClick={e => {
+                setExpanded(false);
+                if (location.pathname === "/") {
+                  const el = document.getElementById("hero");
+                  if (el) el.scrollIntoView({ behavior: "smooth" });
+                } else {
+                  navigate("/#hero");
+                }
+              }}
+            >Home</Nav.Link>
+            <Nav.Link
+              onClick={e => {
+                setExpanded(false);
+                if (location.pathname === "/") {
+                  const el = document.getElementById("about");
+                  if (el) el.scrollIntoView({ behavior: "smooth" });
+                } else {
+                  navigate("/#about");
+                }
+              }}
+            >About</Nav.Link>
+            <Nav.Link
+              onClick={e => {
+                setExpanded(false);
+                if (location.pathname === "/") {
+                  const el = document.getElementById("testimonials");
+                  if (el) el.scrollIntoView({ behavior: "smooth" });
+                } else {
+                  navigate("/#testimonials");
+                }
+              }}
+            >Testimonials</Nav.Link>
+            <Nav.Link
+              onClick={e => {
+                setExpanded(false);
+                if (location.pathname === "/") {
+                  const el = document.getElementById("contact");
+                  if (el) el.scrollIntoView({ behavior: "smooth" });
+                } else {
+                  navigate("/#contact");
+                }
+              }}
+            >Contact</Nav.Link>
             <Nav.Link
               as={Link}
               to="/login"

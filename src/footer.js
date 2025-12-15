@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {  FaEnvelope, FaPhone, FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import {  FaEnvelope, FaPhone, FaInstagram, FaFacebook, FaLinkedin, FaTwitter, FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -50,14 +50,14 @@ export default function Footer() {
           <Col md={4} className="mb-4 mb-md-0">
             <h5 className="fw-bold mb-3">Giant Strides School</h5>
             <p>
-              K-12 Online Tutoring & Exam Prep. Virtual tutoring that delivers real results with personalized, world-class lessons available anytime, anywhere.
+              Quality Learning. Trusted Tutors. Real Results
             </p>
           </Col>
           <Col md={4} className="mb-4 mb-md-0">
             <h5 className="fw-bold mb-3">Quick Links</h5>
             <ul className="list-unstyled">
               <li><a href="#home" className="text-white text-decoration-none"> Home</a></li>
-              <li><a href="/about" className="text-white text-decoration-none"> About</a></li>
+              <li><a href="#about" className="text-white text-decoration-none"> About</a></li>
               <li><a href="#services" className="text-white text-decoration-none"> Services</a></li>
               <li><a href="#testimonials" className="text-white text-decoration-none"> Testimonials</a></li>
               <li><a href="#contact" className="text-white text-decoration-none"> Contact</a></li>
@@ -66,16 +66,19 @@ export default function Footer() {
           <Col md={4}>
             <h5 className="fw-bold mb-3">Contact Us</h5>
             <p>
-              <FaEnvelope />  <a href="mailto:info@giantstridesschool.com" className="text-white text-decoration-none">info@giantstridesschool.com</a>
+              <FaEnvelope />  <a href="mailto:giantstridesedutech@gmail.com" className="text-white text-decoration-none">giantstridesedutech@gmail.com</a>
             </p>
             <p>
-              <FaPhone />  <a href="tel:+447949626406" className="text-white text-decoration-none">+44 7949 626 406</a>
+              <FaPhone />  <a href="tel:+234 9073141035, +447378898212" className="text-white text-decoration-none">+234 9073141035, +447378898212</a>
             </p>
+            <p>(Available for enquiries, registrations, and support)</p>
             <p>
               <strong>Follow Us:</strong><br />
-              <a href="https://instagram.com/theclassytishaa" className="text-white text-decoration-none me-2"><FaInstagram /> </a>
-              <a href="https://facebook.com/theclassytisha" className="text-white text-decoration-none me-2"><FaFacebook /> </a>
-              <a href="https://linkedin.com/company/classy-tisha" className="text-white text-decoration-none"><FaLinkedin /> </a>
+              <a href="https://www.instagram.com/giantstrides_edutech?igsh=eXMwYjlkOXZkY3Q5" className="text-white text-decoration-none me-2"><FaInstagram /></a>
+              <a href="https://www.facebook.com/share/1Jjr6Q6D8d/" className="text-white text-decoration-none me-2"><FaFacebook /></a>
+              <a href="https://www.linkedin.com/company/giant-strides-edu-tech-consulting-limited/" className="text-white text-decoration-none me-2"><FaLinkedin /></a>
+              <a href="https://x.com/giantstridesedu?t=HpBnnG0z4XCSKpeU0ttAZg&s=09" className="text-white text-decoration-none me-2" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a href="https://www.tiktok.com/@giant_strides_edutech?_r=1&_t=ZS-92FFduMG3Wc" className="text-white text-decoration-none" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
             </p>
           </Col>
         </Row>

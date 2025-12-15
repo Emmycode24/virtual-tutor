@@ -201,7 +201,10 @@ export default function Signup() {
             Close
           </Button>
           {modalMessage.startsWith("Signup successful") && (
-            <Button variant="primary" onClick={() => { setShowModal(false); navigate('/login'); }}>
+            <Button variant="primary" onClick={() => { 
+              setShowModal(false); 
+              setTimeout(() => { window.location.href = '/virtual-tutor/login'; }, 500);
+            }}>
               Go to Login
             </Button>
           )}

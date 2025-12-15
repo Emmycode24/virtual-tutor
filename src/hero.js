@@ -21,7 +21,7 @@ export default function Hero() {
         <h1 className="fw-bold display-3 mb-4 text-center">Virtual Tutoring </h1>
         <p className="fw-bold display-3 mb-4">That Delivers Real Results</p>
         <p className="lead mb-4 fs-5">
-          Get personalized, world-class lessons for K-12 students, available anytime, anywhere.
+          Quality Learning. Trusted Tutors. Real Results.
         </p>
         <div className="d-flex gap-3 justify-content-center flex-wrap">
           <Button as={Link} to="/signup" variant="light" size="lg" className="px-5">

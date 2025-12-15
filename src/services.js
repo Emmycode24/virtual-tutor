@@ -48,7 +48,7 @@ export default function Services() {
                 <img src={item.img} alt={item.title} className="w-100 rounded mb-3" />
                 <div className="mb-3">{item.icon}</div>
                 <h5 className="fw-bold mb-2">{item.title}</h5>
-                <p className="mb-3 fs-4">{item.text}</p>
+                <p className="mb-3 fontSize-20px">{item.text}</p>
               </div>
             </Col>
           ))}
