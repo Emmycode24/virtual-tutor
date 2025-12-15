@@ -33,8 +33,8 @@ export default function Navbar() {
       onToggle={(expanded) => setExpanded(expanded)}
       expanded={expanded}
     >
-      <Container fluid style={{ paddingLeft: 0, paddingRight: 0 }}>
-          <BSNav.Brand as={Link} to="/#hero">
+      <Container fluid style={{ paddingLeft: "1rem", paddingRight: "1rem" }}>
+          <BSNav.Brand as={Link} to="/#hero" style={{ paddingRight: "1.5rem" }}>
             <span style={{ fontWeight: "bold", color: "#4e73df", fontSize: "20px" }}>
               Giant Strides School
             </span>
@@ -44,23 +44,22 @@ export default function Navbar() {
         </BSNav.Toggle>
         <BSNav.Collapse id="main-nav">
           <Nav className="ms-auto gap-3 align-items-center">
-            <Nav.Link as={Link} to="/#hero" active={location.pathname === "/"}>Home</Nav.Link>
+            <Nav.Link href="#hero" onClick={() => setExpanded(false)}>Home</Nav.Link>
             {(() => {
               const isHome = location.pathname === "/";
-              const aboutTarget = isHome ? "/#about" : "/about";
-              const isActive = (isHome && location.hash === "#about") || location.pathname === "/about";
               return (
-                <Nav.Link as={Link} to={aboutTarget} active={isActive}>
+                <Nav.Link href={isHome ? "#about" : "/about"} onClick={() => setExpanded(false)}>
                   About
                 </Nav.Link>
               );
             })()}
-            <Nav.Link as={Link} to="/#testimonials" >Testimonials</Nav.Link>
-            <Nav.Link as={Link} to="/#contact">Contact</Nav.Link>
+            <Nav.Link href="#testimonials" onClick={() => setExpanded(false)}>Testimonials</Nav.Link>
+            <Nav.Link href="#contact" onClick={() => setExpanded(false)}>Contact</Nav.Link>
             <Nav.Link
               as={Link}
               to="/login"
               className="btn btn-primary text-white px-3 rounded"
+              onClick={() => setExpanded(false)}
             >
               Login
             </Nav.Link>
@@ -68,6 +67,7 @@ export default function Navbar() {
               as={Link}
               to="/signup"
               className="btn btn-outline-primary px-3 rounded"
+              onClick={() => setExpanded(false)}
             >
               Signup
             </Nav.Link>

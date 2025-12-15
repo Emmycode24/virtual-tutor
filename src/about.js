@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -52,20 +53,20 @@ export default function About() {
 							<p className="mb-3 fs-4">
 								Our mission is simple: to help every student unlock their academic brilliance and build confidence in their abilities.
 							</p>
-					</Col>
-					<Col md={6} data-aos="fade-left">
-						<img
-							src={learningPic}
-							alt="About Virtual Tutor - Expert Tutors and Personalized Learning"
-							style={{
-								borderRadius: "10px",
-								width: "100%",
-								height: "auto",
-								boxShadow: "0 10px 30px rgba(15, 23, 42, 0.1)",
-							}}
-						/>
-					</Col>
-				</Row>					{/* Why Choose Us */}
+						</Col>
+						<Col md={6} data-aos="fade-left">
+							<img
+								src={learningPic}
+								alt="About Virtual Tutor - Expert Tutors and Personalized Learning"
+								style={{
+									borderRadius: "10px",
+									width: "100%",
+									height: "auto",
+									boxShadow: "0 10px 30px rgba(15, 23, 42, 0.1)",
+								}}
+							/>
+						</Col>
+					</Row>					{/* Why Choose Us */}
 					<Row className="mt-5">
 						<Col lg={12} data-aos="fade-up">
 							<h2 className="fw-bold text-center mb-5">Why Choose Us?</h2>
@@ -132,7 +133,7 @@ export default function About() {
 					<p className="lead mb-4">
 						Book your first lesson today and see the difference personalized tutoring can make.
 					</p>
-					<Button href="/signup" variant="light" size="lg">
+					<Button as={Link} to="/signup" variant="light" size="lg" className="px-5">
 						Get Started
 					</Button>
 				</Container>

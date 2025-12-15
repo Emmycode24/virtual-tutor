@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaHome, FaInfoCircle, FaCogs, FaComments, FaEnvelope, FaPhone, FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import {  FaEnvelope, FaPhone, FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -48,7 +48,7 @@ export default function Footer() {
       <Container>
         <Row className="mb-4">
           <Col md={4} className="mb-4 mb-md-0">
-            <h5 className="fw-bold mb-3">Virtual Tutor</h5>
+            <h5 className="fw-bold mb-3">Giant Strides School</h5>
             <p>
               K-12 Online Tutoring & Exam Prep. Virtual tutoring that delivers real results with personalized, world-class lessons available anytime, anywhere.
             </p>
@@ -56,26 +56,26 @@ export default function Footer() {
           <Col md={4} className="mb-4 mb-md-0">
             <h5 className="fw-bold mb-3">Quick Links</h5>
             <ul className="list-unstyled">
-              <li><a href="#home" className="text-white text-decoration-none"><FaHome /> Home</a></li>
-              <li><a href="/about" className="text-white text-decoration-none"><FaInfoCircle /> About</a></li>
-              <li><a href="#services" className="text-white text-decoration-none"><FaCogs /> Services</a></li>
-              <li><a href="#testimonials" className="text-white text-decoration-none"><FaComments /> Testimonials</a></li>
-              <li><a href="#contact" className="text-white text-decoration-none"><FaEnvelope /> Contact</a></li>
+              <li><a href="#home" className="text-white text-decoration-none"> Home</a></li>
+              <li><a href="/about" className="text-white text-decoration-none"> About</a></li>
+              <li><a href="#services" className="text-white text-decoration-none"> Services</a></li>
+              <li><a href="#testimonials" className="text-white text-decoration-none"> Testimonials</a></li>
+              <li><a href="#contact" className="text-white text-decoration-none"> Contact</a></li>
             </ul>
           </Col>
           <Col md={4}>
             <h5 className="fw-bold mb-3">Contact Us</h5>
             <p>
-              <FaEnvelope /> Email: <a href="mailto:info@virtualtutor.com" className="text-white text-decoration-none">info@virtualtutor.com</a>
+              <FaEnvelope />  <a href="mailto:info@giantstridesschool.com" className="text-white text-decoration-none">info@giantstridesschool.com</a>
             </p>
             <p>
-              <FaPhone /> Phone: <a href="tel:+447949626406" className="text-white text-decoration-none">+44 7949 626 406</a>
+              <FaPhone />  <a href="tel:+447949626406" className="text-white text-decoration-none">+44 7949 626 406</a>
             </p>
             <p>
               <strong>Follow Us:</strong><br />
-              <a href="https://instagram.com/theclassytishaa" className="text-white text-decoration-none me-2"><FaInstagram /> Instagram</a>
-              <a href="https://facebook.com/theclassytisha" className="text-white text-decoration-none me-2"><FaFacebook /> Facebook</a>
-              <a href="https://linkedin.com/company/classy-tisha" className="text-white text-decoration-none"><FaLinkedin /> LinkedIn</a>
+              <a href="https://instagram.com/theclassytishaa" className="text-white text-decoration-none me-2"><FaInstagram /> </a>
+              <a href="https://facebook.com/theclassytisha" className="text-white text-decoration-none me-2"><FaFacebook /> </a>
+              <a href="https://linkedin.com/company/classy-tisha" className="text-white text-decoration-none"><FaLinkedin /> </a>
             </p>
           </Col>
         </Row>
@@ -83,7 +83,7 @@ export default function Footer() {
         <Row>
           <Col className="text-center">
             <p className="mb-0">
-              &copy; {currentYear} Virtual Tutor: K-12 Online Tutoring & Exam Prep. All rights reserved.
+              &copy; {currentYear} Giant Strides School: K-12 Online Tutoring & Exam Prep. All rights reserved.
             </p>
           </Col>
         </Row>

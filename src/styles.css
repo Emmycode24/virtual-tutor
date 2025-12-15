@@ -60,6 +60,13 @@ transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 6px 18px rgba(34, 74, 190, 0.06);
 }
 
+/* Mobile dropdown margin */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    margin-right: 1rem;
+  }
+}
+
 :root {
   --primary: #224abe; /* deep blue */
   --primary-2: #4e73df; /* lighter blue */
