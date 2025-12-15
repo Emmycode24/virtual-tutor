@@ -22,8 +22,8 @@ export default function Footer() {
     const onScroll = () => {
       const scrollY = window.scrollY || window.pageYOffset;
 
-      // show footer only if user has scrolled past the hero (with some buffer)
-      if (scrollY > heroBottom + 50) {
+      // show footer only if user has scrolled past the hero (with buffer) and at least 300px down
+      if (scrollY > Math.max(heroBottom + 50, 300)) {
         setVisible(true);
       } else {
         setVisible(false);
