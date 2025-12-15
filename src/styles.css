@@ -144,6 +144,16 @@ footer a:hover { color: var(--primary-2); text-decoration: none; }
   .hero { padding: 3rem 1rem; }
   .display-3 { font-size: 2rem; }
 }
+
+.responsive-hero {
+  min-height: 90vh;
+}
+
+@media (max-width: 767px) {
+  .responsive-hero {
+    min-height: 80vh;
+  }
+}
  
 .btn-primary:hover {
   background-color: #224abe;

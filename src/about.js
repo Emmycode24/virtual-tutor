@@ -29,7 +29,7 @@ export default function About() {
 			>
 				<Container>
 					<h1 className=" fw-bold " data-aos="fade-up">
-						About Virtual Tutor
+						About Giant Strides School
 					</h1>
 					<p className="lead fw-semibold" data-aos="fade-up" data-aos-delay="100">
 						Empowering students and educators to reach their full potential
@@ -44,7 +44,7 @@ export default function About() {
 						<Col md={6} data-aos="fade-right">
 							<h2 className="fw-bold mb-4">Our Story</h2>
 							<p className="mb-3 fs-4">
-								Founded with a vision to revolutionize online education, Virtual-Tutor brings together experienced educators, modern technology, and a passion for student success.
+								Founded with a vision to revolutionize online education, Giant Stride School brings together experienced educators, modern technology, and a passion for student success.
 							</p>
 							<p className="mb-3  fs-4">
 								With a team of over 80 dedicated tutors across different subjects and year groups, we provide structured, curriculum-aligned teaching to students preparing for national and international examinations, including UK 11+ Grammar School Entrance Exams, SATs, and Primary/Secondary curriculum support.

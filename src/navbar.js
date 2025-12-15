@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 
 export default function Navbar() {
   const [navbarBg, setNavbarBg] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -29,14 +30,18 @@ export default function Navbar() {
       fixed="top"
       className={`navbar-custom shadow-sm ${navbarBg ? "navbar-bg" : ""}`}
       style={{ zIndex: 1200, position: 'fixed', top: 0, left: 0, right: 0, width: '100%' }}
+      onToggle={(expanded) => setExpanded(expanded)}
+      expanded={expanded}
     >
-      <Container>
+      <Container fluid style={{ paddingLeft: 0, paddingRight: 0 }}>
           <BSNav.Brand as={Link} to="/#hero">
             <span style={{ fontWeight: "bold", color: "#4e73df", fontSize: "20px" }}>
-              Virtual Tutor
+              Giant Strides School
             </span>
           </BSNav.Brand>
-        <BSNav.Toggle aria-controls="main-nav" />
+        <BSNav.Toggle aria-controls="main-nav">
+          {expanded ? '✕' : '☰'}
+        </BSNav.Toggle>
         <BSNav.Collapse id="main-nav">
           <Nav className="ms-auto gap-3 align-items-center">
             <Nav.Link as={Link} to="/#hero" active={location.pathname === "/"}>Home</Nav.Link>
