@@ -43,7 +43,6 @@ export default function About() {
 				<Container>
 					<Row className="align-items-center mb-5">
 						<Col md={6} data-aos="fade-right">
-							<h2 className="fw-bold mb-4">Our Story</h2>
 							<p className="mb-3 fs-4">
 								Giant Strides Online School was born from a simple but powerful belief: every child deserves access to quality education and the right support to thrive no matter their location or learning level.
 							</p>
@@ -70,9 +69,9 @@ export default function About() {
 							/>
 						</Col>
 					</Row>					{/* Why Choose Us */}
-					<Row className="mt-5">
+					<Row className="mt-1">
 						<Col lg={12} data-aos="fade-up">
-							<h2 className="fw-bold text-center mb-5">Why Choose Us?</h2>
+							<h2 className="fw-bold text-center mb-3">Why Choose Us?</h2>
 						</Col>
 						<Col md={4} className="mb-4" data-aos="fade-up" data-aos-delay="100">
 							<div className="p-4 text-center">
