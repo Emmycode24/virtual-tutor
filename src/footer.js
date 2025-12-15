@@ -21,10 +21,9 @@ export default function Footer() {
 
     const onScroll = () => {
       const scrollY = window.scrollY || window.pageYOffset;
-      const windowBottom = scrollY + window.innerHeight;
 
-      // show footer if user has scrolled past the hero, or is near bottom of page
-      if (scrollY > heroBottom - 100 || windowBottom >= document.body.scrollHeight - 200) {
+      // show footer only if user has scrolled past the hero (with some buffer)
+      if (scrollY > heroBottom + 50) {
         setVisible(true);
       } else {
         setVisible(false);
