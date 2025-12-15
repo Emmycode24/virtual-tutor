@@ -92,15 +92,23 @@ section {
   scroll-margin-top: 88px; /* adjust if your navbar height changes */
 }
 
+
 .hero {
   min-height: 88vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 4rem 0 2rem 0;
   background: linear-gradient(135deg, var(--primary-2) 0%, var(--primary) 100%);
   color: white;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding-top: 9.5rem;
+    padding-bottom: 2.5rem;
+  }
 }
 
 .hero h1, .hero .lead {

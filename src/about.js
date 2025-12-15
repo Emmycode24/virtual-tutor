@@ -47,9 +47,9 @@ export default function About() {
 							<p className="mb-3 fs-4">
 								Giant Strides Online School was born from a simple but powerful belief: every child deserves access to quality education and the right support to thrive no matter their location or learning level.
 							</p>
-							<p className="mb-3  fs-3">
-
-							</p>As part of Giant Strides Edu-Tech Consulting Limited, we started by supporting families who needed trusted tutors, flexible learning options, and results they could see. Over time, we grew into an online school that combines experienced educators, modern teaching tools, and personalized learning to help children take confident steps forward in their academic journey.
+							<p className="mb-3 fs-4">
+								As part of Giant Strides Edu-Tech Consulting Limited, we started by supporting families who needed trusted tutors, flexible learning options, and results they could see. Over time, we grew into an online school that combines experienced educators, modern teaching tools, and personalized learning to help children take confident steps forward in their academic journey.
+							</p>
 							<p className="mb-3 fs-4">
 
 								From early years to secondary education and exam preparation, we focus on progress, confidence, and long-term success, not just grades. Our tutors don’t just teach — they guide, encourage, and help learners unlock their full potential.
