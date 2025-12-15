@@ -204,8 +204,9 @@ export default function Signup() {
             <Button variant="primary" onClick={() => { 
               setShowModal(false); 
               setTimeout(() => {
-                const base = window.location.pathname.startsWith('/virtual-tutor') ? '/virtual-tutor' : '';
-                window.location.href = `${base}/login`;
+                const isProd = window.location.hostname.includes('github.io');
+                const loginPath = isProd ? '/virtual-tutor/login' : '/login';
+                window.location.href = loginPath;
               }, 500);
             }}>
               Go to Login
