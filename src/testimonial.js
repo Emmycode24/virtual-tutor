@@ -76,8 +76,10 @@ return (
 <Carousel
 	indicators={true}
 	controls={true}
-	interval={4000}
+	interval={3500}
 	className="testimonial-carousel"
+	wrap={true}
+	pause={false}
 >
 	{Array.from({ length: Math.ceil(testimonials.length / 3) }).map((_, slideIdx) => (
 		<Carousel.Item key={slideIdx}>
