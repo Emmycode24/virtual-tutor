@@ -203,11 +203,7 @@ export default function Signup() {
           {modalMessage.startsWith("Signup successful") && (
             <Button variant="primary" onClick={() => { 
               setShowModal(false); 
-              setTimeout(() => {
-                const isProd = window.location.hostname.includes('github.io');
-                const loginPath = isProd ? '/virtual-tutor/login' : '/login';
-                window.location.href = loginPath;
-              }, 500);
+               navigate('/login')
             }}>
               Go to Login
             </Button>
