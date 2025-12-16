@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {  FaEnvelope, FaPhone, FaInstagram, FaFacebook, FaLinkedin, FaTwitter, FaTiktok } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaInstagram, FaFacebook, FaLinkedin, FaTwitter, FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -59,7 +59,6 @@ export default function Footer() {
               <li><a href="#home" className="text-white text-decoration-none"> Home</a></li>
               <li><a href="#about" className="text-white text-decoration-none"> About</a></li>
               <li><a href="#services" className="text-white text-decoration-none"> Services</a></li>
-              <li><a href="#testimonials" className="text-white text-decoration-none"> Testimonials</a></li>
               <li><a href="#contact" className="text-white text-decoration-none"> Contact</a></li>
             </ul>
           </Col>
@@ -82,9 +81,56 @@ export default function Footer() {
             </p>
           </Col>
         </Row>
-        <hr />
+
         <Row>
+        </Row>
+        <Row className="mb-4 pb-4 ">
           <Col className="text-center">
+            <div className="mb-3">
+              <span className="display-4 fontSize-60px fw-bold text-primary" style={{
+                fontFamily: "'Google Sans', 'Segoe UI', sans-serif",
+                letterSpacing: '-0.5px'
+              }}>
+                GIANT STRIDES SCHOOL
+              </span>
+            </div>
+            <div className="d-flex flex-wrap justify-content-center gap-4 mt-3">
+              <a
+                href="#about"
+                className="text-white-50 text-decoration-none hover-text-light"
+                rel="noopener noreferrer"
+                style={{ transition: 'color 0.2s' }}
+                onMouseOver={(e) => e.target.style.color = '#fff'}
+                onMouseOut={(e) => e.target.style.color = 'rgba(255,255,255,0.5)'}
+              >
+                ABOUT
+              </a>
+              <a
+                href="https://about.google/products/"
+                className="text-white-50 text-decoration-none hover-text-light"
+                rel="noopener noreferrer"
+                style={{ transition: 'color 0.2s' }}
+                onMouseOver={(e) => e.target.style.color = '#fff'}
+                onMouseOut={(e) => e.target.style.color = 'rgba(255,255,255,0.5)'}
+              >
+                POLICY
+              </a>
+              <a
+                href="https://about.google/products/"
+                className="text-white-50 text-decoration-none hover-text-light"
+                rel="noopener noreferrer"
+                style={{ transition: 'color 0.2s' }}
+                onMouseOver={(e) => e.target.style.color = '#fff'}
+                onMouseOut={(e) => e.target.style.color = 'rgba(255,255,255,0.5)'}
+              >
+                TERMS
+              </a>
+            </div>
+          </Col>
+
+        </Row>
+        <Row>
+          < Col className="text-center">
             <p className="mb-0">
               &copy; {currentYear} Giant Strides School: K-12 Online Tutoring & Exam Prep. All rights reserved.
             </p>
